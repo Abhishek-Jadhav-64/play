@@ -452,6 +452,32 @@ if(isset($_POST["name"]) && isset($_POST["age"]))
 
 <?php
 
+    class Books
+    {
+        var $price;
+        var $title;
+
+        function setPrice($price)
+        {
+            $this->price = $price;
+        }
+        function getPrice()
+        {
+            return $this->price;
+        }
+        function setTitle($title)
+        {
+            $this->title=$title;
+        }
+        function getTitle()
+        {
+            return $this->title;
+        }
+
+    }
+
+    $physics = new Books();
+    $physics -> setTitle("");
 
 
 ?>

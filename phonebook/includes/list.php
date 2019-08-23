@@ -32,6 +32,19 @@ if(!$retval)
 
 ?>
 
+<?php if(isset($_SESSION['success']) && $_SESSION['success'] == true)
+{
+    echo '<div class=\"alert alert-dark\" role=\"alert\">This is a dark alert—check it out!</div>';
+    $_SESSION['success'] = null;
+}
+
+else
+{
+    $_SESSION['success'] = null;
+}
+?>
+
+
 <table class="table table-striped" style="margin-top: 50px">
     <thead>
     <tr>
@@ -50,7 +63,7 @@ if(!$retval)
 
             <tr>
                 <td><?php echo $row['id'] ?></td>
-                <td><img style="width: 150px" src="images/<?php echo $row['file_name'] /*isset($row['file_name']) ? $row['file_name'] : "temp.jpeg"*/ ;?>"></td>
+                <td><img style="width: 100px" src="images/<?php echo $row['file_name'] /*isset($row['file_name']) ? $row['file_name'] : "temp.jpeg"*/ ;?>"></td>
                 <td><?php echo $row['first_name'] ?></td>
                 <td><?php echo $row['last_name'] ?></td>
                 <td><?php echo $row['email'] ?></td>
@@ -61,4 +74,6 @@ if(!$retval)
 <?php endwhile; ?>
 
     </tbody>
+
+
 </table>

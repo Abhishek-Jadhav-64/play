@@ -1,4 +1,5 @@
 <?php require_once ('includes/header.php');?>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
 <?php require_once('includes/form.php')?>
 

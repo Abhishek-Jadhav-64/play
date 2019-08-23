@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
@@ -7,7 +9,85 @@ $db = 'temp';
 
 $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 
-//die(dirname(__DIR__));
+
+
+//$lname = $_POST['last_name'];
+//$email = $_POST['e-mail'];
+//$phoneno = $_POST['phone_no'];
+
+$errors = [];
+
+
+//first name
+if(!isset($_POST['first_name']) || $_POST['first_name'] == '')
+{
+    $errors['first_name'] = 'First Name is invalid';
+    //die($errors);
+}
+elseif(preg_match("/^[a-z]$/" , $_POST['first_name']))
+{
+    $errors['first_name'] = 'First Name has invalid characters';
+}
+else
+{
+    $fname = $_POST['first_name'];
+}
+
+//last name
+if(!isset($_POST['last_name']) || empty($_POST['last_name']))
+{
+    $errors['last_name'] = "Last Name is invalid";
+}
+elseif (preg_match("/^[a-z]$/" , $_POST['last_name']))
+{
+    $errors['last_name'] = "Last Name has invalid characters";
+}
+else
+{
+    $lname = $_POST['last_name'];
+}
+
+//email
+if($_POST['e-mail'] == "" || isset($_POST['e-mail']))
+{
+    $errors['e-mail'] = "Email is empty";
+}
+elseif(filter_var($_POST['e-mail'], FILTER_VALIDATE_EMAIL))
+{
+    $errors['e-mail'] = "Email is invalid";
+}
+else
+{
+    $email = $_POST['e-mail'];
+}
+
+//phone no
+if($_POST['phone_no'] == "" || isset($_POST['phone_no']))
+{
+    $errors['phone_no'] = "Phone No is empty";
+}
+elseif(preg_match("/^[0-9]$/" , $_POST['phone_no']) || strlen($_POST['phone_no']) == 10)
+{
+    $errors['phone_no'] = "Phone No is invalid";
+}
+
+else
+{
+    $phoneno = $_POST['phone_no'];
+}
+
+
+if(!empty($errors))
+{
+
+    $_SESSION['errors'] = $errors;
+
+
+    header('Location: new.php');
+    die();
+}
+
+
 
 if(!$conn)
 {
@@ -21,12 +101,15 @@ else
 
     //$sql = ;
 
-    /*if(!(isset($_POST['firstname1']) && isset($_POST['lastname1']) && isset($_POST['email1']) && isset($_POST['phoneno1'])))
+    /*if(!(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e-mail']) && isset($_POST['phone_no'])))
     {
 
     }*/
-    $r1 = 10;
-    $r = mysqli_query($conn, "SELECT MAX(id) AS max_id FROM phonebook");
+    //$r1 = 10;
+    $r = mysqli_query($conn, "SELECT `AUTO_INCREMENT` AS ID
+                              FROM INFORMATION_SCHEMA.TABLES
+                              WHERE TABLE_SCHEMA = 'temp'
+                              AND TABLE_NAME   = 'phonebook'");
 
     if(!$r)
     {
@@ -41,14 +124,11 @@ else
 
 
 
-    $int_id = $r1->max_id;
-    $int_id+=1;
+    $int_id = $r1->ID;
+    //$int_id+=1;
     //die("asfah" .$int_id);
 
-    $fname = $_POST['firstname1'];
-    $lname = $_POST['lastname1'];
-    $email = $_POST['email1'];
-    $phoneno = $_POST['phoneno1'];
+
 
     //if($_FILES['image'])
     //{
@@ -69,7 +149,7 @@ else
     /*$extensions= array("jpeg","jpg","png");
 
     if(in_array($file_ext,$extensions)=== false){
-        $errors[]="extension not allowed, please choose a JPEG or PNG file.";
+        $errorsss[]="extension not allowed, please choose a JPEG or PNG file.";
     }*/
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $filelocation)) {
@@ -85,9 +165,12 @@ else
     {
         echo 'Could not enter data' . " " .mysqli_error($conn);
         echo '<br />';
+        $_SESSION['success'] = false;
     }
     else
     {
+
+        $_SESSION["success"] = true;
         //echo 'Data entered';
         //echo '<br />';
     }
