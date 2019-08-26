@@ -1,9 +1,10 @@
 <?php
+
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
 $db = 'temp';
-
+//$user_id = $_GET['user_id'];
 $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 
 if(!$conn)
@@ -16,7 +17,8 @@ else {
     //echo '<br />';
 }
 
-$sql = "SELECT * from phonebook";
+$sql = "SELECT * from phonebook"; //WHERE user_id=.$user_id;
+
 $retval = mysqli_query($conn, $sql);
 if(!$retval)
 {
@@ -43,7 +45,6 @@ else
     $_SESSION['success'] = null;
 }
 ?>
-
 
 <table class="table table-striped" style="margin-top: 50px">
     <thead>
@@ -77,3 +78,6 @@ else
 
 
 </table>
+
+<button style="margin-left: 10px" onclick="window.location.href = 'new.php'" class="btn btn-primary">Add New Entry</button>
+<button type="button" onclick="document.location.href='logout.php'" style="margin-left: 10px" class="btn btn-secondary">Logout</button>
