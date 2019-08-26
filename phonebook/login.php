@@ -2,30 +2,62 @@
 
     session_start();
 
+    $errors = [];
 
-    if(isset($_GET['email-address']) && isset($_GET['password']) && $_GET['email-address'] != '' && $_GET['password'] != '')
+    if(isset($_SESSION['errors']))
     {
+        $errors = $_SESSION['errors'];
+        //echo '<pre>'; print_r($errors); die;
+        unset($_SESSION['errors']);
+        //die();
+    }
 
-        /*$errors = [];
+    if(isset($_POST['email-address']) && $_POST['email-address'] != "" && $_POST['password'] != "" && isset($_POST['password']))
+    {
+        /*//Email validation
+        if(!isset($_POST['email-address']) || $_POST['email-address'] == "")
+        {
+            $errors['email-address'] = "Email is empty";
+        }
+        elseif(filter_var($_POST['email-address'], FILTER_VALIDATE_EMAIL))
+        {
+            $errors['email-address'] = "Email is invalid";
+        }
+        else
+        {
+            $email = $_POST['email-address'];
+        }
+
+        //Password validation
+        if($_POST['password'] == "" || !isset($_POST['password']))
+        {
+            $errors['password'] = "Password is empty";
+        }
+        else
+        {
+            $password = $_POST['password'];
+        }
+
+
 
         if(!empty($errors))
         {
-
             $_SESSION['errors'] = $errors;
 
-
-            header('Location: new.php');
+            header('Location: login.php');
             die();
         }*/
 
-        $dbhost = 'localhost';
-        $dbuser = 'root';
-        $dbpass = '';
-        $db = 'temp';
 
-        $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 
-        $sql = "SELECT id from users WHERE email='". $_GET['email-address']."' AND password='".$_GET['password'] . "'";
+        require_once "includes/config.php";
+
+        //$email = $_POST['email-address'];
+        //$password = $_POST['password'];
+
+        $salt = ')58:A+dcV%tNMf`8';
+
+        $sql = "SELECT id from admin WHERE email='".$email."' AND password='".sort(md5($password. $salt)) . "'";
 
         //echo $sql;
         //die();
@@ -44,6 +76,7 @@
             //var_dump($id);
             $_SESSION['user_logged_in'] = true;
             header('Location: index.php');
+
         }
     }
 ?>
@@ -166,9 +199,6 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
-                                <a href="#" class="btn btn-link">
-                                    Forgot Your Password?
-                                </a>
                             </div>
                     </div>
                     </form>

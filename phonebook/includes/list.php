@@ -1,11 +1,6 @@
 <?php
 
-$dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = '';
-$db = 'temp';
-//$user_id = $_GET['user_id'];
-$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
+require_once "config.php";
 
 if(!$conn)
 {

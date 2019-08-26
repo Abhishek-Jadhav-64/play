@@ -2,12 +2,7 @@
 
 session_start();
 
-$dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = '';
-$db = 'temp';
-
-$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
+require_once "includes/config.php";
 
 
 

@@ -4,10 +4,8 @@ session_start();
 
 $id = $_GET['id'];
 echo $_GET['id'];
-$dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = '';
-$db = 'temp';
+
+require_once "includes/config.php";
 
 $errors = [];
 
@@ -79,7 +77,7 @@ if(!empty($errors)) {
 
 
 }
-$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
+//$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 
 try
 {
