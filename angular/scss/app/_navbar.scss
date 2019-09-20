@@ -1,0 +1,65 @@
+.logoholder
+{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    float: left;
+}
+
+#logo
+{
+    width: 12%;
+    float: left;
+    margin-left: 1.66%;
+}
+
+.navbar
+{
+    position: relative;
+    display: flex;
+    width: 96.68%;
+    margin-left: 1.66%;
+    border-bottom: 1px solid;
+    border-color: black;
+    padding-bottom: 3px;
+}
+
+.topnav
+{
+    vertical-align: middle;
+    width: 70%;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    text-align: right;
+
+    li{
+        display: inline-block;
+        
+        a {
+            font-size: 3rem;
+            color: #aaa;
+            display: block;
+            line-height: 40px;
+            padding: 1.5rem 1.5rem;
+            text-decoration: none;  
+            &:hover {color: #FFCC00}
+        }
+    }
+}
+
+.hamburger
+{
+    width: 70%;
+    float: right;
+    display: none;
+}
+
+#hamburger
+{
+   text-align: right;
+   vertical-align: middle;
+    width: 20%;
+}

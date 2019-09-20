@@ -1,0 +1,35 @@
+h1{
+    font-weight: 10px;
+    border: 2px solid blue;
+    width: 33%;
+    height: 200px;
+    padding: 10px;
+    margin: 0 auto 0 auto;
+}
+
+p{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: Indie Flower;
+}
+
+td{
+    width: 100px;
+    height: 100px;
+}
+
+.vertical{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.horizontal{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table{
+    margin: auto;
+}
+

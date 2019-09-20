@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AngularJS | $http service</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src = script1.js></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/style/jquery.jscrollpane.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/style/jquery.jscrollpane.css"></script>
+
+    <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous">
+    </script>
+
+    <style>
+        span.done-true{
+
+            color:gray;
+            font-style: italic;
+            text-decoration: line-through;
+
+        }
+        span[contenteditable = "true"]{
+            background: grey;
+            padding: 3px;
+        }
+
+        .styleclass
+        {
+            margin:60px;
+            font-size:20px
+        }
+
+        .hover
+        {
+            font-size: 20px
+        }
+
+        #navigation {
+            position: relative;
+        }
+
+        #content {
+            height: 2000px;
+        }
+    </style>
+
+    <script type = "text/javascript" language = "javascript">
+        $(document).ready(function() {
+           /*$("input").css({
+               'margin':'60px',
+               'font-size':'20px'
+            });*/
+
+            $('#bio > div').hide();
+            $('#bio > div:first').show();
+
+            $('#bio h2').click(function(){
+                $(this).next().animate({'height':'toggle'}, 'slow', 'swing');
+            });
+
+            $('h1').text('a very good');
+
+            $('<input type="button" id="togglebutton" value="toggle">').insertAfter('#disclaimer');
+
+            $("input").addClass("styleclass");
+
+            $('<strong>This is </strong>').prependTo('#disclaimer');
+            $('<strong> Program</strong>').appendTo('#disclaimer');
+
+            /*$("h1").mouseover(function(){
+                $(this).addClass("hover");
+            });
+
+            $("h1").mouseout(function(){
+                $(this).removeClass("hover");
+            });*/
+
+           
+
+            $(window).scroll(function(){
+                $('#navigation').stop().animate({top:$(document).scrollTop()},'slow','linear');
+            });
+
+            $('h1').hover(function(){
+                $(this).animate({paddingLeft: '+=15px'}, 1000, 'swing'); //addClass("hover");
+            },
+            function(){
+                $(this).animate({paddingLeft: '-=15px'}, 1000, 'linear'); //removeClass("hover");
+            });
+
+            $('h1').effect('shake', {times:3}, 300).effect('highlight', {}, 3000) //.hide('explode', {}, 1000);
+
+
+
+            $('#togglebutton').click(function(){
+                $('#disclaimer').slideToggle();
+            });
+
+            $('.spoiler').hide();
+            $('<span class="revealer">Tell me!</span>').insertBefore('.spoiler');
+            $('.revealer').click(function(){
+                $(this).hide();
+                $(this).next().fadeIn();
+            });
+
+            $('h3').animate({
+                padding:'20px',
+                textColor:'#777777',
+                borderBottom: '3px solid #8f8f8f',
+                borderRight: '3px solid #bfbfbf' 
+            },3000, 'swing');
+
+            $('<div id = "navigation_blob"></div>').css({
+                width : $('#navigation li:first a').width()+10,
+                height : $('#navigation li:first a').height()+10
+            }).appendTo('#navigation');
+
+            $('#navigation_blob').animate( 
+                {width: $(this).width() + 10, left: $(this).position().left},
+                {duration: 'slow', easing: 'swing', queue: false}
+            );
+
+            /*$('#togglebutton').click(function(){
+                if($('#disclaimer').is(':visible'))
+                {
+                    $('#disclaimer').hide();
+                }
+                else
+                {
+                    $('#disclaimer').show();
+                }
+            });*/
+
+            /*$('#hidebutton').click(function(){
+                $('#disclaimer').hide();
+            });
+
+            $('#showbutton').click(function(){
+                $('#disclaimer').show();
+            });*/
+        });
+    </script>
+
+</head>
+<!--<body ng-app="mainApp">
+    <div ng-controller="people">
+        <ul>
+            <li ng-repeat="person in persons">
+                {{ person.Name + ' : ' + person.Age }}
+            </li>
+        </ul>
+    </div>
+</body> -->
+
+<!--<body ng-app="mainApp" ng-controller="app">
+    <button ng-click="generateRandom()">Generate Random Number</button>
+    <br>
+    {{ randomNumber }}
+</body>-->
+
+<!--<body ng-app="mainApp" ng-controller="app">
+    {{ greetMessage }}
+</body>-->
+
+<!--<body ng-app="mainApp" ng-controller="app">
+
+    <button ng-click="toggle()">Toggle Message</button>
+    <div class="message" ng-show="show == 'msg1'">
+        This is message 1
+    </div>
+    <div class="message" ng-show="show == 'msg2'">
+        This is message 2
+    </div>
+</body>-->
+
+<body ng-app="mainApp" ng-controller="app">
+
+        <ul id="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Buy!</a></li>
+                <li><a href="#">Gift Ideas</a></li>       
+        </ul>
+
+    <h1 id="disclaimer">HEllo world</h1>
+
+    <!--<input type="button" id="togglebutton" value="toggle">
+    <input type="button" id="hidebutton" value="hide">
+    <input type="button" id="showbutton" value="show">-->
+
+    <h3>Guess how has created this site</h3>
+    <span class="spoiler">Manoj ji!!!!</span>
+
+    <h2 style="text-align:center;">Add a task</h2>
+
+    <div id="bio">
+            <h2>Who’s Hot Right Now?</h2>
+
+            <h2>Beau Dandy</h2>
+            <div>
+            <img src="../images/beau_100.jpg" width="100" height="100" alt="Beau Dandy"/>
+            <p>Content about Beau Dandy</p>
+            </div>
+
+            <h2>Johnny Stardust</h2>
+            <div>
+            <img src="../images/johnny_100.jpg" width="100" height="100" alt="Johny Stardust"/>
+            <p>Content about Johny Stardust</p>
+            </div>
+
+            <h2>Glendatronix</h2>
+            <div>
+            <img src="../images/glenda_100.jpg" width="100" height="100" alt="Glendatronix"/>
+            <p>Content about Glendatronix</p>
+            </div>       
+    </div>
+
+    <div style="align-content: center">
+            <input ng-model="task" ng-keydown="searchEnter()" type="text" style="display:block margin=auto">
+            <div id = "taskstoshow">
+                <ul>
+                    <li ng-repeat ="oneTask in tasks track by $index">
+                        <input type="checkbox" ng-model="oneTask.status">
+                        <span contenteditable="false" ng-keydown="enterAgain()" ng-dblclick="contentEdit(oneTask.taskMessage)" ng-model="oneTask.taskMessage" class="done-{{oneTask.status}}">
+                            
+                            {{
+                                oneTask.taskMessage
+                            }}
+                        </span>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>

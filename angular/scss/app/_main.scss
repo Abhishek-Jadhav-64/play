@@ -1,0 +1,129 @@
+html, body{ font-size: 10px;}
+body{ margin: 0; padding: 0;}
+p{ margin: 0; padding: 0;}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+
+@import 'mixins';
+@import 'header';
+@import 'navbar';
+@import 'footer';
+
+
+
+$button : "";
+
+#demotext
+{
+    color: aliceblue;
+    font-family: $font-reg;
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    //Filter: Alpha(Opacity=100, FinishOpacity=0, Style=1, StartX=0, StartY=0, FinishX=580, FinishY=0);
+    //Filter: Chroma(Color = #3300FF);
+    filter:drop-shadow(3px 3px 2px #000000);
+}
+
+#mainimg{
+    background-image: url("https://www.gocolonial.com/CTAimages/hr-hw-dallas.jpg");
+    margin: 1.66%;
+    width: 96.68%;
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ }
+
+
+
+ h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 0%;
+    margin: 5px 0;
+ }
+
+ h4{
+     font-size: 25px;
+ }
+
+.formtext{
+    text-align: left;
+    width: 20%;
+    float: left;
+    font-size: 2.5rem;
+}
+
+input{
+    width: 70%;
+    display: block;
+    font-size: 25px;
+}
+
+.formholder{
+    margin: 0% auto;
+    width: 40%;
+}
+
+button{
+     display: block;
+     background-color:azure;
+     border-radius: 15px 50px;
+     font-size: 25px;
+     margin: 3rem auto;
+     width: 150px;
+     height: 50px;
+     &:hover {background-color: #FFCC00};
+ }
+
+ .griditem{
+    width: 30%;
+    margin: 1.66%;
+    float: left;
+ }
+
+.image{
+     
+     background-image: url("sea.jpg");
+     width: 100%;
+     height: 30rem;
+     background-position: center; /* Center the image */
+     background-repeat: no-repeat; /* Do not repeat the image */
+     background-size: cover;
+ }
+
+.formgroup
+{
+    width: 100%;
+    margin: 0% auto;
+}
+
+.siteinfo {
+
+    margin: 1.66%;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+
+    -webkit-column-gap: 40px; 
+    -moz-column-gap: 40px; 
+    column-gap: 40px;
+            
+    p{
+        font-size: 4rem;
+    }
+}
+
+@import 'mediaquery';
+ 

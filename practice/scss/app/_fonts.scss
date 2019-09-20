@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'robotoBold';
+    src: url('./public/fonts/roboto-bold/Roboto-Bold.woff') format('woff'),
+         url('./public/fonts/roboto-bold/Roboto-Bold.ttf') format('ttf'),
+         url('./public/fonts/roboto-bold/Roboto-Bold.svg') format('svg'),
+         url('./public/fonts/roboto-bold/Roboto-Bold.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoMedium';
+    src: url('./public/fonts/roboto-bold/Roboto-Medium.woff') format('woff'),
+         url('./public/fonts/roboto-bold/Roboto-Medium.ttf') format('ttf'),
+         url('./public/fonts/roboto-bold/Roboto-Medium.svg') format('svg'),
+         url('./public/fonts/roboto-bold/Roboto-Medium.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoRegular';
+    src: url('./public/fonts/roboto-bold/Roboto-Regular.woff') format('woff'),
+         url('./public/fonts/roboto-bold/Roboto-Regular.ttf') format('ttf'),
+         url('./public/fonts/roboto-bold/Roboto-Regular.svg') format('svg'),
+         url('./public/fonts/roboto-bold/Roboto-Regular.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$font-reg : robotoRegular;
+$font-medium : robotoMedium;
+$font-bold : robotoBold;
+$font-blue : rgb(0, 142, 211);
+$font-grey : rgb(106,106,106);

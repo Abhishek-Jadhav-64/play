@@ -1,0 +1,29 @@
+@mixin footerpadding($padding) {
+    padding-left: $padding;
+}
+
+footer {
+    
+    padding: 20px 0%;
+
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    @include bgcolor(azure);
+
+    p{
+        @include footerpadding(1%);
+        font-size: 1.7rem;
+        margin: 10px 0;
+    }
+    a{
+        margin: 10px 1%;
+        font-size: 1.6rem;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        &:hover {color: #FFCC00}
+    }
+    
+}   

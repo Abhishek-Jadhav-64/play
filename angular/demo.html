@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <title>
+
+        </title>
+
+        <script >
+           $(document).ready(function() {
+                $("#hamburger").click(function(){
+
+                    $("nav").toggleClass('mobile-hide');
+
+                });
+
+            });
+        </script>
+    </head>
+
+    <body>        
+        <header>          
+            <div class="navbar clearfix">
+                <div class="logoholder clearfix">
+                    <img id="logo" src="https://ksassets.timeincuk.net/wp/uploads/sites/54/2012/01/Apple-Logo-1.png">
+                    
+                </div>
+                <nav class="topnav clearfix mobile-hide">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Help</a></li>
+                    
+                    </ul>
+                </nav>
+                <div class="hamburger clearfix">
+                        <img id="hamburger" src="hamburger.png">
+                </div>
+            </div>       
+        </header>
+
+        <div class="container">
+            <div id="mainimg" src="https://www.gocolonial.com/CTAimages/hr-hw-dallas.jpg">
+                <label id="demotext">BOMBAY</label>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="griditem">
+                <div class="image"></div>
+                <div>
+                    <h1>
+                        Header
+                    </h1>
+                    <h1>
+                        Description
+                    </h1>
+                </div>
+            </div>
+            <div class="griditem">
+                <div class="image"></div>
+                <div>
+                    <h1>
+                        Header
+                    </h1>
+                    <h1>
+                        Description
+                    </h1>
+                </div>
+            </div>
+            <div class="griditem">
+                <div class="image"></div>
+                <div>
+                    <h1>
+                        Header
+                    </h1>
+                    <h1>
+                        Description
+                    </h1>
+                </div>
+            </div>
+            <!--<img class="demoimg" src="https://getsocial.nz/wp-content/uploads/2014/12/Evolution_by_will_yen-500x500.png">
+            <img class="demoimg" src="https://www.newcastlewildflower.com.au/wp-content/uploads/2013/05/punch-500x500.jpg">
+            <img class="demoimg" src="https://www.ridefox.com/img/home/home-bike-500X500.jpg">   -->     
+        </div>
+
+        <h2>Form</h2>
+
+        <form class="formholder" action="" method="POST">
+            <div class="formgroup clearfix">
+                <label class="formtext">Email: </label>
+                <input type="text">
+            </div>
+            <br>
+            <div class="formgroup clearfix">
+                <label class="formtext">Password: </label>
+                <input type="text">  
+            </div>
+            <br>
+            <div class="formgroup clearfix">
+                <label class="formtext">Phone: </label>
+                <input type="number">
+            </div>
+            <button type="button">Submit</button>
+        </form>
+
+        <div class="siteinfo">
+            <p>
+                CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.
+            </p>
+        </div>
+
+        <footer class="footer">
+                <p>Sass © 2006–2019 Hampton Catlin, Natalie Weizenbaum, Chris Eppstein, Jina Anne, and numerous contributors. It is available for use and modification under the MIT License.</p>
+                <div class="footer-link">
+                    <a href="https://github.com/I-AM-0xBIT" >Github</a>
+                    <a href="https://github.com/I-AM-0xBIT" >Website Source Code</a>
+                    <a href="https://github.com/I-AM-0xBIT" >Community Guidelines</a>
+                </div>
+        </footer>
+    </body>
+</html>

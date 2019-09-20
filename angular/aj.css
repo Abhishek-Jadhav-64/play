@@ -1,0 +1,26 @@
+div{
+    float: left;
+}
+
+#mainimg{
+   margin: 1.66%;
+   width: 96.68%;
+   height: 386.72px;
+}
+
+.demoimg{
+    margin: 1.66%;
+    width: 30%;
+    height: 500px;
+    float: left;
+    
+}
+
+p{
+    font-family: Audiowide;
+    font-size: 30px;
+    margin: 1.66%;
+    font-weight: 800;
+    border-bottom: 5px solid #f1f1f1;
+    padding-bottom: 20px;
+}
