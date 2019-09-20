@@ -1,0 +1,26 @@
+.group1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    background-color: rgb(147,177,192); 
+    p{
+        color: white; 
+        font-family: $font-reg;
+        text-align: center;
+        float: left;
+        font-family: $font-reg;
+        font-size: 36px; 
+        padding: 0% 17%;
+    }
+
+    button{
+        margin-top: 40px;
+        background-color: $font-blue;
+        color: white;
+        height: 40px;
+        width: 10%;
+        align-self: center; 
+    }
+}

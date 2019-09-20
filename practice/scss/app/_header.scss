@@ -6,17 +6,24 @@
     flex-direction: column;
     width: 20%;
     float: left;
+    margin-left: 2%;
 }
 
 #sitelogo
 {
+    width: 50%;
     margin-left: 3.2%;
     display: block;
+    padding-top: 15px;
 }
 
 #vectorSmartObject
 {
-    margin-left: 3.2;
+    width: 50%;
+    margin-left: 3.2%; 
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 
 .navbarholder
@@ -24,34 +31,40 @@
     width: 100%;
     position: relative;
     display: flex;
-    border-bottom: 1px solid;
     border-color: black;
     padding-bottom: 3px;
+    align-items: center;
 }
 
 .topnav
 {
     vertical-align: middle;
     width: 80%;
+    
 }
 
 nav ul{
     margin:0;
     padding: 0;
     text-align: right;
-
+    padding-right: 3%;
+    height: 100%;
     li{
         display: inline-block;
-        
+        padding:0 2%; 
+        height: 100%; 
         a {
             font-family: $font-medium;
             font-size: 14px;
+            height: 100%;
             color: black;
             display: block;
             text-decoration: none;  
-            &:hover {color: blue}
+            &:hover {color: $font-blue; border-top: 3px solid $font-blue;}
         }
+
     }
+
 }
 
 .hamburger

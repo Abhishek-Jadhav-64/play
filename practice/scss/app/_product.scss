@@ -1,7 +1,11 @@
 .product-info{
     height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h1{
+        margin-top: 0%;
         font-family: $font-bold;
         font-size: 48px;
         text-align: center;
@@ -10,10 +14,10 @@
     }
 
     p{
+        text-align: center;
         color: $font-grey; 
         font-family: $font-reg;
         font-size: 16px;
-        text-align: center;
         margin: 0% 19%;
     }
 }
@@ -22,6 +26,7 @@
 {
     margin-left: 12.5%;
     margin-right: 12.5%;
+    margin-bottom: 50px;
 }
 
 .productitem{

@@ -1,35 +1,94 @@
-.aboutitem{
-    width: 30%;
-    margin: 1.66%;
-    float: left;
- }
-
-#aboutimage1{
-     
-     background-image: url("");
-     width: 100%;
-     height: 30rem;
-     background-position: center; /* Center the image */
-     background-repeat: no-repeat; /* Do not repeat the image */
-     background-size: cover;
- }
-
- #aboutimage2{
-     
-    background-image: url("");
-    width: 100%;
-    height: 30rem;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+.about-info{
+    height: 150px;
+    h1{
+        text-align: center;
+        font-size: 48px;
+        color: $font-blue;
+        font-family: $font-reg;
+        margin-bottom: 1%;  
+    }
+    p{
+        padding: 0% 17%;
+        text-align: center;
+        color: $font-grey;  
+        font-size: 14px;
+        font-family: $font-reg;   
+    }
 }
 
-#aboutimage3{
-     
-    background-image: url("");
-    width: 100%;
-    height: 30rem;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+.about-item-holder
+{
+    height: 200px;
+    margin: 0 12%;
+
+    .aboutitem{
+        width: 27.9%; 
+        height: 200px; 
+        float: left;
+        display: flex;
+        margin: 0% 2.7%; 
+        flex-direction: column;
+        justify-content: center;     
+
+        #aboutimage1{
+            align-self: center;
+            margin-bottom: 10px;
+            background-image: url("./public/images/about1.png");
+            width: 30%;     
+            height: 89px;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+        }
+       
+        #aboutimage2{
+           align-self: center;
+           background-image: url("./public/images/about2.png");
+           width: 30%;     
+           height: 89px;
+           margin-bottom: 10px;
+           background-position: center; /* Center the image */
+           background-repeat: no-repeat; /* Do not repeat the image */
+           background-size: cover;
+       }
+       
+       #aboutimage3{
+            align-self: center;
+           background-image: url("./public/images/about3.png");
+           width: 30%;     
+            height: 89px;
+            margin-bottom: 10px;
+           background-position: center; /* Center the image */
+           background-repeat: no-repeat; /* Do not repeat the image */
+           background-size: cover;
+       }
+
+       h1{
+            text-align: center;
+            color: $font-blue;
+            font-family: $font-medium;
+            font-size: 18px;
+       }
+       p{
+           text-align: center;
+           font-family: $font-reg;
+           font-size: 14px;
+       }
+     }
+    
+}
+  
+.about-button-holder{
+    height: 100px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    button{
+        background-color: $font-grey;
+        color: white;
+        height: 40px; 
+        width: 10%;
+        align-self: center;     
+    } 
 }

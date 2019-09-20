@@ -1,0 +1,42 @@
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    border-top: 3px solid $font-blue;
+    width: 100%;
+    .copyright
+    {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70px;
+        margin-left: 3.6%; 
+        
+
+        p{
+            font-family: $font-reg;
+            font-size: 14px;
+            color: $font-slight-grey; 
+        }
+    }
+
+    .share{
+        width: 30%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-right: 3%;
+
+        img{
+            
+            margin: 5px;   
+            width: 10%;
+            height: 40px; 
+        }
+    }
+
+}
+
+    
+    
