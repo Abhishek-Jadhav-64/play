@@ -1,0 +1,36 @@
+.projects-section {
+  padding: 2rem 0;
+  h2 {
+    color: $primary;
+    padding: 1rem 0;
+  }
+  .featured-text {
+    color: $primary;
+    padding: 2rem;
+    @media (min-width: 992px) {
+
+      &.left{
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid $primary;
+      }
+      
+      &.right{
+        padding: 0 0 0 2rem;
+        border-right: 0.5rem solid $primary;
+      }
+    }
+  }
+  .project-text {
+    color: $primary;
+    padding: 3rem;
+    font-size: 90%;
+    @media (min-width: 992px) {
+      padding: 5rem;
+      hr {
+        border-color: $primary;
+        border-width: .25rem;
+        width: 30%;
+      }
+    }
+  }
+}

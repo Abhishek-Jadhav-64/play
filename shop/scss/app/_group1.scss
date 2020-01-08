@@ -1,0 +1,26 @@
+.group1
+{
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5rem 0;
+    background-color: rgb(147,177,192); 
+    p{
+        color: white; 
+        font-family: $font-muli;
+        text-align: center;
+        font-family: $font-muli;
+        font-size: 3.6rem; 
+        margin: 0 auto;
+        width: 66%;
+    }
+
+    button{ 
+        
+        margin-top: 4rem;
+        background-color: $font-blue;
+        color: white;
+        height: 4rem;
+        width: 10%;
+    }
+}

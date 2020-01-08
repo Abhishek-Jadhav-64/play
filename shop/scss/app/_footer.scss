@@ -1,0 +1,51 @@
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    background-color: #434346;
+
+    .copyright
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .image-holder{
+            width: 3%;
+            margin-left: 25%;
+            margin-right: 2%;
+            img{
+                width: 100%;
+            }
+        }
+     
+        .copy-holder{
+            width: 23%;
+            p{
+                width: 100%;
+                font-family: $font-muli;
+                font-size: 1.4rem;
+                color: $font-slight-grey; 
+            }
+        }
+        
+        .share{
+            width: 6%;
+            h4{
+                text-align: center;
+                padding: 1rem 0;    
+                width: 100%;
+                font-family: $font-muli;
+                font-size: 1.2rem;
+                color: $font-slight-grey; 
+
+            }
+        }
+    }
+}
+
+    
+    

@@ -1,5 +1,5 @@
 html, body{ font-size: 10px;}
-body{ margin: 0; padding: 0;}
+body{ margin: 0; padding: 0; background-color: rgb(10, 31, 64);}
 p{ margin: 0; padding: 0;}
 
 .clearfix:after {
@@ -10,12 +10,11 @@ p{ margin: 0; padding: 0;}
     clear: both;
  }
 
-
-@import 'mixins';
-@import 'header';
-@import 'navbar';
-@import 'footer';
-
+//@import 'mixins';
+//@import 'header';
+//@import 'navbar';
+@import 'form';
+//@import 'footer';
 
 
 $button : "";
@@ -65,21 +64,10 @@ $button : "";
     font-size: 2.5rem;
 }
 
-input{
-    width: 70%;
-    display: block;
-    font-size: 25px;
-}
-
-.formholder{
-    margin: 0% auto;
-    width: 40%;
-}
-
 button{
      display: block;
      background-color:azure;
-     border-radius: 15px 50px;
+     border-radius: 25px;
      font-size: 25px;
      margin: 3rem auto;
      width: 150px;

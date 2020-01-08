@@ -33,23 +33,22 @@ p{ margin: 0; padding: 0;}
         z-index: 0;
     
         .banner-left{
-            top: 120px; 
+            top: 14%; 
             left: 14%; 
             position: absolute;
-            height: 100%;
-            width: 40%;
+            width: 50%;
             
             h1{
                 font-family: $font-reg;
-                font-size: 54px;
-                color: $font-blue;
+                font-size: 5.4rem;
+                color: $font-light-blue; 
                 width: 55%;
                 margin: 1%; 
             }
     
             p{
                 font-family: $font-reg;
-                font-size: 14px;
+                font-size: 1.4rem;
                 color: white;
                 width: 60%;
             }
@@ -58,7 +57,7 @@ p{ margin: 0; padding: 0;}
                 margin-top: 20px;
                 background-color: $font-blue;
                 color: white;
-                height: 40px;
+                height: 4rem;
                 width: 20%;
                 align-self: center; 
             }
@@ -81,12 +80,13 @@ p{ margin: 0; padding: 0;}
     position: relative;
 
     p{
+        width: 66%;
         text-align: center;
         margin-top: 0%;
         font-family: $font-reg;
-        font-size: 48px;
+        font-size: 4.8rem;
         color: white;
-        padding: 0% 17%;  
+        margin: 0% auto; 
     }
  }
  

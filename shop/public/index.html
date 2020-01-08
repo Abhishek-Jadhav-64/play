@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.banner-holder').slick();
+                $('.product-container').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 5
+                });
+            });
+        </script>
+
+        <title>
+            Brandmovers
+        </title>
+
+    </head>
+
+    <body>        
+        <header>          
+            <div class="navbar-container clearfix">
+                <div class="logo-container clearfix">
+                    <div class="logo-holder">
+                            <img id="sitelogo" src="images/logo.png"> 
+                    </div>
+                    <div class="user-info-container">
+                        <h3>
+                            Ryan Bataillon
+                        </h3>
+                        <h3>
+                            0 pts
+                        </h3>
+                    </div> 
+                </div>
+                <nav class="topnav clearfix mobile-hide">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">MY ACCOUNT</a></li>
+                        <li><a href="#">DOMINATIONS</a></li>
+                        <li><a href="#">PROGRAMS</a></li>
+                    </ul>
+                </nav>
+                <nav class="navbar-holder2">
+                    <ul>
+                        <li><a href="#"><img src="images/medal.png"></img></a></li>
+                        <li><a href="#"><img src="images/like.png"></img></a></li>
+                        <li><a href="#"><img src="images/notification.png"></img></a></li>
+                        <li><a href="#"><img src="images/shopping-cart.png"></img></a></li>
+                        <li><a href="#"><img src="images/info.png"></img></a></li>
+                        <li><a href="#">LOGOUT</a></li>
+                        <li><a id="shop" href="#">SHOP</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger-container clearfix">
+                    <img id="hamburger" src="public/images/ham.png">
+                </div>
+            </div>       
+        </header>
+
+        <form>
+            <select>
+                <option value="default">Browse Categories...</option>
+                <option value="1">Entertainment/Travel</option>
+                <option value="2">Food/Beverages</option>
+                <option value="3">Experiences</option>
+                <option value="4">Electronics</option>
+            </select>
+            <div>
+                <input type="search" placeholder="Search brand, item, keyword">
+            </div>
+        </form>
+
+        <div class="content-container">
+                <div><h2>Now Trending</h2></div>
+
+                <div class="clearfix product-container">
+                    <div class="product-item">
+                        <div id="product10" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Electronics
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product11" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Apparel & Accessories
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product12" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product13" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product14" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product15" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div><h1>FEATURED SHOPS</h1></div>
+        
+                <div class="clearfix shop-container">
+                    <div class="shop-item">
+                        <div id="shop1" class="shop-image"></div>
+                        <div class="shop-text">
+                            <h3>
+                                Electronics
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div id="shop2" class="shop-image"></div>
+                        <div class="shop-text">
+                            <h3>
+                                Apparel & Accessories
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div id="shop3" class="shop-image"></div>
+                        <div class="shop-text">
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="banner-container">
+                
+                    <div class="banner-holder">
+                        <div id="banner1"></div>
+                        <div id="banner2"></div>
+                    </div>
+               
+                </div>
+        
+                <div><h2>New Arrivals</h2></div>
+        
+                <div class="clearfix product-container">
+                    <div class="product-item">
+                        <div id="product10" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Electronics
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product11" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Apparel & Accessories
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <div id="product12" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product13" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product14" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product15" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div><h1>TRENDING SHOPS</h1></div>
+
+                <div class="clearfix shop-container">
+                        <div class="shop-item">
+                            <div id="shop1" class="shop-image"></div>
+                            <div class="shop-text">
+                                <h3>
+                                    Electronics
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <div id="shop2" class="shop-image"></div>
+                            <div class="shop-text">
+                                <h3>
+                                    Apparel & Accessories
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <div id="shop3" class="shop-image"></div>
+                            <div class="shop-text">
+                                <h3>
+                                    Kitchen
+                                </h3>
+                            </div>
+                        </div>
+                </div>
+            
+                <div><h2>Recommended for You</h2></div>
+        
+                <div class="clearfix product-container">
+                    <div class="product-item">
+                        <div id="product10" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Electronics
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product11" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Apparel & Accessories
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <div id="product12" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product13" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product14" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div id="product15" class="product-image"></div>
+                        <div>
+                            <h3>
+                                Kitchen
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div><h1>SHOP BY CATEGORY</h1></div>
+        
+                <div class="clearfix category-container">
+
+                    <div class="category-item">
+                        <div id="category1" class="category-image"></div>
+                        <div>
+                            <h3>
+                                Experiences
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div id="category2" class="category-image"></div>
+                        <div>
+                            <h3>
+                                Electronics
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div id="category3" class="category-image"></div>
+                        <div>
+                            <h3>
+                                Video Games
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div id="category4" class="category-image"></div>
+                        <div>
+                            <h3>
+                                Apparel & Accessories
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div id="category5" class="category-image"></div>
+                        <div>
+                            <h3>
+                                Handbags
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div id="category6" class="category-image"></div>
+                        <div>
+                            <h3>
+                                Jewelry & Watches
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <div id="category7" class="category-image"></div>
+                        <h3>
+                            Luggage
+                        </h3>
+                    </div>
+                    <div class="category-item">
+                        <div id="category8" class="category-image"></div>
+                        <h3>
+                            Kitchen
+                        </h3>
+                    </div>
+                </div>
+        </div>
+
+        <footer class="footer">
+            <div class="copyright">
+                <div class="image-holder">
+                    <img src="images/logo.png">
+                </div>
+                <div class="copy-holder">
+                    <p>POWERED BY REWARDIAN. ©2019. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="share">
+                        <h4>TERMS OF USE</h4>
+                </div>
+                <div class="share">
+                    <h4>PRIVACY POLICY</h4>
+                </div>
+                <div class="share">
+                    <h4>SUPPORT</h4>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

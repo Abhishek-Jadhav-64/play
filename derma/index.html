@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+        <script >
+            $(document).ready(function() {
+                 $("#hamburger").click(function(){
+ 
+                     $("nav").toggleClass('mobile-hide');
+ 
+                 });
+ 
+             });
+         </script>
+
+        <title>
+            ESSAI
+        </title>
+
+    </head>
+
+    <body>        
+        <header>          
+            <div class="navbarholder clearfix">
+                <div class="logoholder clearfix">
+                    <img id="sitelogo" src="public/images/essai.png">
+                                      
+                </div>
+                <nav class="topnav clearfix mobile-hide">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger clearfix">
+                        <img id="hamburger" src="public/images/ham.png">
+                </div>
+            </div>       
+        </header>
+
+        <div class="container">
+            <div id=banner-holder>
+                    <div id="banner">
+                            <div class="banner-left">
+                                <h1>AS FAST AS IT GETS</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque eros urna, id mattis leo cursus vitae. Ut id purus non mauris pharetra facilisis eu sed ante. Integer eu rhoncus sem. Nam congue, ante eu consectetur .magna nec turpis.</p>
+                                <button>
+                                    READ MORE
+                                </button>
+                            </div>
+                            <div class="banner-right">
+                                
+                            </div>
+                    </div>
+            </div>
+           
+        </div>
+
+        <div class="about-info">
+            <h1>ABOUT</h1>
+            <p>Vestibulum mollis ut nunc a mattis. Aliquam eu consectetur eros, non varius turpis. Fusce tempor dolor non ornare volutpat. 
+                    Aenean aliquam sollicitudin egestas. Mauris ac aliquam eros.</p>
+        </div>
+
+        <div class="clearfix about-item-holder"> 
+            <div class="aboutitem">
+                <div id="aboutimage1"></div>
+                <h1>
+                    Vivamus scelerisque
+                </h1>
+                <p>
+                    Aliquam eu consectetur eros, non varius turpis. Fusce tempor dolor non ornare volutpat.
+                </p>
+            </div>
+            <div class="aboutitem">
+                <div id="aboutimage2"></div>
+                <h1>
+                    Vivamus scelerisque
+                </h1>
+                <p>
+                    Aliquam eu consectetur eros, non varius turpis. Fusce tempor dolor non ornare volutpat.
+                </p>
+            </div>
+            <div class="aboutitem">
+                <div id="aboutimage3"></div>
+                <h1>
+                    Vivamus scelerisque
+                </h1>
+                <p>
+                    Aliquam eu consectetur eros, non varius turpis. Fusce tempor dolor non ornare volutpat.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-button-holder">
+            <button> 
+                VIEW MORE
+            </button>
+        </div>
+
+        <div class="container">
+            <div id="banner2">
+                <p>Phasellus varius elementum libero, viverra euismod diam tristique sed.</p>
+            </div>
+        </div>
+
+        <div class="services-info">
+            <h1>SERVICES</h1>
+            <p>Vestibulum mollis ut nunc a mattis. Aliquam eu consectetur eros, non varius turpis. Fusce tempor dolor non ornare volutpat. 
+                    Aenean aliquam sollicitudin egestas. Mauris ac aliquam eros.</p>
+        </div>
+
+        <div class="clearfix services-holder">
+            <div class="service-item">
+                <div id="service1"></div>
+            </div>
+            <div class="service-item">
+                <div id="service2"></div>
+            </div>
+            <div class="service-item">
+                <div id="service3"></div>
+            </div>
+            <div class="service-item">
+                <div id="service4"></div>
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>PRODUCT</h1>
+            <p>Vestibulum mollis ut nunc a mattis. Aliquam eu consectetur eros, non varius turpis. Fusce tempor dolor non ornare volutpat. 
+                    Aenean aliquam sollicitudin egestas. Mauris ac aliquam eros.</p>
+        </div>
+
+        <div class="clearfix product-holder">
+            <div class="productitem">
+                <div id="product1"></div>
+            </div>
+            <div class="productitem">
+                <div id="product2"></div>
+            </div>
+            <div class="productitem">
+                <div id="product3"></div>
+            </div>
+            <div class="productitem">
+                <div id="product4"></div>
+            </div>
+        </div>
+
+        <div class="group1">
+            <p>Phasellus varius elementum libero, viverra euismod diam tristique sed.</p>
+            <button>
+                VIEW MORE
+            </button>
+        </div>
+
+        <div class="contact-holder">
+                <div class="contact-us">
+                    <h1>
+                        CONTACT US
+                    </h1>
+                    <p class="p1">
+                        1600 Amphitheatre Parkway, Mountain View, CA 94043, United States 
+                    </p>
+                    <p class="p2">
+                        info@example.com
+                     </p>
+                </div>
+        </div>
+
+        <footer class="footer">
+            <div class="copyright">
+                <p>Copyright © 2015-2016 essai.com. All rights reserved.</p>
+            </div>
+            <div class="links">
+                <div class="share">
+                    <img src="public/images/TWITTER-Icon.png">
+                </div>
+                <div class="share">
+                    <img src="public/images/FB-Icon.png">
+                </div>
+                
+            </div>
+        </footer>
+    </body>
+</html>

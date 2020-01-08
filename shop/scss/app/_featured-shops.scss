@@ -1,0 +1,50 @@
+.shop-container {
+    width: 100%;
+    margin-bottom: 5rem;
+    .shop-item {
+        float: left;
+        width: 30%;
+        margin: 1.66%;
+        text-align: center;
+
+        .shop-image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 65rem;
+        }
+
+        #shop1 {
+            background: url("images/shop1.jpg")
+        }
+
+        #shop2 {
+            background: url("images/shop2.jpg")
+        }
+        
+        #shop3 {
+            background: url("images/shop3.jpg")
+        }
+
+        #shop4 {
+            background: url("images/shop4.jpg")
+        }
+
+        #shop5 {
+            background: url("images/shop5.jpg")
+        }
+
+        #shop6 {
+            background: url("images/shop6.jpg")
+        }
+
+        .shop-text{
+            margin-top: 2rem;
+            h3 {
+                font-size: 2rem;
+            }
+        }
+        
+    }
+}

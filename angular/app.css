@@ -11,6 +11,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
+  background-color: #0a1f40;
 }
 
 p {
@@ -27,88 +28,35 @@ p {
   clear: both;
 }
 
-.logoholder {
-  display: flex;
-  align-items: center;
-  width: 30%;
-  float: left;
-}
-
-#logo {
-  width: 12%;
-  float: left;
-  margin-left: 1.66%;
-}
-
-.navbar {
-  position: relative;
-  display: flex;
-  width: 96.68%;
-  margin-left: 1.66%;
-  border-bottom: 1px solid;
-  border-color: black;
-  padding-bottom: 3px;
-}
-
-.topnav {
-  vertical-align: middle;
-  width: 70%;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  font-size: 3rem;
-  color: #aaa;
-  display: block;
-  line-height: 40px;
-  padding: 1.5rem 1.5rem;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  color: #FFCC00;
-}
-
-.hamburger {
-  width: 70%;
-  float: right;
-  display: none;
-}
-
-#hamburger {
-  text-align: right;
-  vertical-align: middle;
-  width: 20%;
-}
-
-footer {
-  padding: 20px 0%;
+input {
   width: 100%;
-  margin-top: 10px;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: azure;
+  display: block;
+  font-size: 2rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  padding: 1rem;
 }
-footer p {
-  padding-left: 1%;
-  font-size: 1.7rem;
-  margin: 10px 0;
+
+input:focus {
+  outline: none;
 }
-footer a {
-  margin: 10px 1%;
-  font-size: 1.6rem;
-  display: inline-block;
-  text-decoration: none;
-  color: black;
+
+form {
+  margin: 30rem auto;
+  width: 30%;
 }
-footer a:hover {
-  color: #FFCC00;
+
+p {
+  color: white;
+  font-size: 2rem;
+}
+
+input.ng-pristine {
+  background-color: white;
+}
+
+input.ng-invalid.ng-touched {
+  border: 2px solid red;
 }
 
 #demotext {
@@ -151,21 +99,10 @@ h4 {
   font-size: 2.5rem;
 }
 
-input {
-  width: 70%;
-  display: block;
-  font-size: 25px;
-}
-
-.formholder {
-  margin: 0% auto;
-  width: 40%;
-}
-
 button {
   display: block;
   background-color: azure;
-  border-radius: 15px 50px;
+  border-radius: 25px;
   font-size: 25px;
   margin: 3rem auto;
   width: 150px;

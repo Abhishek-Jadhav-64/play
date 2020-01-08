@@ -1,0 +1,46 @@
+.slider-inner{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+
+    div{
+        display: none;
+    }
+
+    div.active{
+        display: inline-block;
+    }
+}
+
+.slider-outer{
+    overflow: auto;
+}
+
+.slick-prev{
+    background-image: url('images/back.png');
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    z-index: 10;
+    left: -3rem;
+    top: 42%;
+    text-indent: -999px;
+}
+
+.slick-next{
+    background-image: url('images/next.png');
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    z-index: 10;
+    right: -3rem;
+    top: 42%;
+    text-indent: -999px;
+}

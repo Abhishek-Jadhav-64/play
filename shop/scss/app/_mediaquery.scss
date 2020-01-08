@@ -1,0 +1,179 @@
+@media screen and (max-width: 1181px)
+ {
+     .aboutitem
+     {
+         width:100%; 
+
+     }
+
+     #sitelogo
+     {
+         text-align: center;
+         width: 100%;
+     }
+
+     #banner .banner-left
+    {
+        width: 70%; 
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        button{
+            width: 30%;
+        }
+    }
+
+    .about-button-holder{
+        button{
+         width: 20%;   
+        } 
+    }
+
+     .productitem
+    {
+        width: 48%;
+    }
+
+    .group1{
+        
+        button{
+            width: 20%;
+        }
+    }
+
+    %imgproperty{
+        height: 230px;
+    }
+
+    .footer .links .share{
+        width: 10%;
+    }
+ }
+
+ @media screen and (max-width: 640px)
+ {
+
+    button{
+        width: 25%;
+    }
+
+    .about-item-holder
+    {
+        flex-direction: column;
+
+        .aboutitem
+        {
+            width: 100%;
+        }
+    }
+
+    
+    #banner .banner-left
+    {
+        width: 100%; 
+        h1{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+
+        button{
+            width: 30%;
+        }
+    }
+
+    #banner2{
+       
+        p{
+            font-size: 3rem;
+        }
+    }
+
+    .hamburger-container
+    {
+        width: 91%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+   .mobile-hide{
+       display: none;
+   }
+
+  nav ul li {
+      display: block;
+      text-align: center;
+      color: black;
+  }
+
+   .topnav
+   {       
+       background-color: white; position: absolute; width: 100%; z-index: 1;
+        top: 100%;
+   }
+
+    #sitelogo
+    {
+        width: 100%;
+    }
+
+    .about-info{
+        h1{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .about-button-holder{
+        button{
+         width: 25%;   
+        } 
+    }
+
+    .product-info{
+        h1{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    %imgproperty{
+        height: 11rem;
+    }
+
+    .group1{
+        
+        h1{
+           font-size: 3.5rem;
+        }
+        p{
+            font-size: 3rem;
+        }
+        button{
+            width: 25%;
+        }
+    }
+
+    .contact-holder{
+        .contact-us{
+            h1{
+                font-size: 3.5rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .footer .links .share{
+        width: 10%;
+    }
+ } 

@@ -2,47 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d05d9c63-8c5c-4c59-bee7-4bcfe6eabbc1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/app/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/app/config/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/app/libraries/Database.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/app/models/Post.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/app/views/inc/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/app/views/inc/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/app/views/pages/about.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/app/views/pages/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/public/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shareposts/public/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/PDO/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/config/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/controllers/Pages.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/libraries/Controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/libraries/Core.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/libraries/Database.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/models/Post.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/views/inc/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/views/inc/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/views/pages/about.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/app/views/pages/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/public/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/public/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/public/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/custom-framework/public/js/main.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-framework/app/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-framework/app/views/pages/about.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-framework/app/views/pages/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-framework/public/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/custom-framework/public/js/main.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/custom-framework/app/.htaccess" afterPath="$PROJECT_DIR$/shareposts/app/.htaccess" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/custom-framework/app/controllers/Pages.php" afterPath="$PROJECT_DIR$/shareposts/app/controllers/Pages.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/custom-framework/app/libraries/Controller.php" afterPath="$PROJECT_DIR$/shareposts/app/libraries/Controller.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/custom-framework/app/libraries/Core.php" afterPath="$PROJECT_DIR$/shareposts/app/libraries/Core.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/custom-framework/app/libraries/Database.php" afterPath="$PROJECT_DIR$/shareposts/app/views/inc/navbar.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/custom-framework/public/.htaccess" afterPath="$PROJECT_DIR$/shareposts/public/.htaccess" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/custom-framework/public/index.php" afterPath="$PROJECT_DIR$/shareposts/public/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/app.css" afterPath="$PROJECT_DIR$/practice/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/app.css.map" afterPath="$PROJECT_DIR$/practice/app.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/index.html" afterPath="$PROJECT_DIR$/practice/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_about.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_about.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_contact-us.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_contact-us.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_fonts.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_fonts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_footer.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_group1.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_group1.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_header.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_main.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_mediaquery.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_mediaquery.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/scss/app/_product.scss" afterPath="$PROJECT_DIR$/practice/scss/app/_product.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -128,8 +100,8 @@
       <file leaf-file-name="form.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/phonebook/includes/form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="78" column="75" lean-forward="false" selection-start-line="78" selection-start-column="75" selection-end-line="78" selection-end-column="75" />
+            <state relative-caret-position="351">
+              <caret line="69" column="37" lean-forward="false" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
               <folding>
                 <marker date="1566563653000" expanded="true" signature="646:679" ph="SELECT * fro... phonebook" />
               </folding>
@@ -337,8 +309,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -467,6 +439,7 @@
       <workItem from="1568694283768" duration="1393000" />
       <workItem from="1568781051348" duration="418000" />
       <workItem from="1568867420289" duration="216000" />
+      <workItem from="1569238184465" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1566565053617</created>
@@ -507,7 +480,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93171000" />
+    <option name="totallyTimeSpent" value="93465000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,17 +493,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="355" y="23" width="1552" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1397351" sideWeight="0.49526066" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1410596" sideWeight="0.49526066" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.4956427" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34404144" sideWeight="0.51686615" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.49182117" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19302072" sideWeight="0.50473934" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -950,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/phonebook/includes/form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="78" column="75" lean-forward="false" selection-start-line="78" selection-start-column="75" selection-end-line="78" selection-end-column="75" />
+        <state relative-caret-position="351">
+          <caret line="69" column="37" lean-forward="false" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
           <folding>
             <marker date="1566563653000" expanded="true" signature="646:679" ph="SELECT * fro... phonebook" />
           </folding>

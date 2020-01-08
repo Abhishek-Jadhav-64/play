@@ -1,0 +1,43 @@
+.banner-container{
+    width: 100%;
+    margin: 10rem 0;
+    display: flex;
+
+    .prev{
+        margin-top: 23rem;
+        height: 4rem;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+    }
+    
+    .next{
+        margin-top: 23rem;
+        position: relative;
+        height: 4rem;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .banner-holder{
+        width: 100%;
+
+    #banner1{
+        background-image: url("images/banner1.jpg");
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #banner2{
+        background-image: url("images/banner2.jpg");
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+}

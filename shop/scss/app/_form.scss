@@ -1,0 +1,34 @@
+form{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    select{
+        background-color: white;
+        height: 4rem;
+        width: 14%;
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+        margin-right: 3rem;
+        font-family: $font-muli;
+    }
+
+    div{
+        width: 45%;
+        input{
+
+            font-family: $font-muli;
+            border:2px solid #cccccc;
+            background-color: white;
+            background-position: 99% 1rem;
+            background-repeat: no-repeat;
+            height: 4rem;
+            width: 100%;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+            background-image: url('images/loupe.png');
+            background-size: 2rem 2rem;
+        }
+    }
+}

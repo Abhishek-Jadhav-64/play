@@ -6,6 +6,22 @@
         <link rel="stylesheet" type="text/css" href="app.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+        <script >
+            $(document).ready(function() {
+                 $("#hamburger").click(function(){
+ 
+                     $("nav").toggleClass('mobile-hide');
+ 
+                 });
+ 
+             });
+         </script>
+
         <title>
             ESSAI
         </title>
@@ -28,7 +44,7 @@
                     </ul>
                 </nav>
                 <div class="hamburger clearfix">
-                        <img id="hamburger" src="hamburger.png">
+                        <img id="hamburger" src="public/images/ham.png">
                 </div>
             </div>       
         </header>
@@ -52,8 +68,8 @@
         </div>
 
         <div class="about-info">
-            <h1>ABOUT</h1>
-            <p>Vestibulum mollis ut nunc a mattis. Aliquam eu consectetur eros, non varius turpis. Fusce tempor dolor non ornare volutpat. 
+            <h1 class="h1-tag">ABOUT</h1>
+            <p class="p-tag">Vestibulum mollis ut nunc a mattis. Aliquam eu consectetur eros, non varius turpis. Fusce tempor dolor non ornare volutpat. 
                     Aenean aliquam sollicitudin egestas. Mauris ac aliquam eros.</p>
         </div>
 
@@ -141,7 +157,7 @@
 
         <div class="contact-holder">
                 <div class="contact-us">
-                    <h1>
+                    <h1 class="h1-tag">
                         CONTACT US
                     </h1>
                     <p class="p1">
@@ -157,9 +173,14 @@
             <div class="copyright">
                 <p>Copyright © 2015-2016 essai.com. All rights reserved.</p>
             </div>
-            <div class="share">
-                <img src="public/images/TWITTER-Icon.png">
-                <img src="public/images/FB-Icon.png">
+            <div class="links">
+                <div class="share">
+                    <img src="public/images/TWITTER-Icon.png">
+                </div>
+                <div class="share">
+                    <img src="public/images/FB-Icon.png">
+                </div>
+                
             </div>
         </footer>
     </body>
